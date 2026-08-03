@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useImperativeHandle, forwardRef } from 'react';
 import { Play, Pause, Music, Volume2, VolumeX } from 'lucide-react';
 
-export default function AudioPlayer() {
+const AudioPlayer = forwardRef((props, ref) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const audioRef = useRef(null);
@@ -63,6 +63,16 @@ export default function AudioPlayer() {
     setIsPlaying(false);
   };
 
+  // Expose playAudio function to parent component
+  useImperativeHandle(ref, () => ({
+    playAudio: () => {
+      attemptPlay();
+    },
+    pauseAudio: () => {
+      attemptPause();
+    }
+  }));
+
   const togglePlay = () => {
     if (isPlaying) {
       attemptPause();
@@ -94,8 +104,10 @@ export default function AudioPlayer() {
   };
 
   useEffect(() => {
+    // Attempt playback on mount
     attemptPlay();
 
+    // Secondary listener for any window click / touch
     const handleGesture = () => {
       attemptPlay();
       window.removeEventListener('click', handleGesture);
@@ -179,4 +191,6 @@ export default function AudioPlayer() {
       )}
     </div>
   );
-}
+});
+
+export default AudioPlayer;

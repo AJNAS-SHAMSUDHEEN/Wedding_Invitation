@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import BackgroundParticles from './components/BackgroundParticles';
 import Navbar from './components/Navbar';
 import HeroCard from './components/HeroCard';
@@ -11,10 +11,24 @@ import WishesSection from './components/WishesSection';
 import ShareBar from './components/ShareBar';
 import Footer from './components/Footer';
 import AudioPlayer from './components/AudioPlayer';
+import WelcomeModal from './components/WelcomeModal';
 
 export default function App() {
+  const [isWelcomeOpen, setIsWelcomeOpen] = useState(true);
+  const audioPlayerRef = useRef(null);
+
+  const handleOpenInvitation = () => {
+    setIsWelcomeOpen(false);
+    if (audioPlayerRef.current) {
+      audioPlayerRef.current.playAudio();
+    }
+  };
+
   return (
     <div className="min-h-screen relative overflow-hidden luxury-paper text-[#3E2A1E]">
+      {/* Welcome Screen / Cover Overlay for 100% Instant Audio Playback */}
+      <WelcomeModal isOpen={isWelcomeOpen} onOpen={handleOpenInvitation} />
+
       {/* Background Animated Palm Shadow & Floating Particle Canvas */}
       <BackgroundParticles />
 
@@ -51,8 +65,8 @@ export default function App() {
       {/* Footer */}
       <Footer />
 
-      {/* Floating Nasheed Audio Player (Manual Trigger) */}
-      <AudioPlayer />
+      {/* Floating Nasheed Audio Player */}
+      <AudioPlayer ref={audioPlayerRef} />
     </div>
   );
 }
