@@ -57,10 +57,7 @@ export default function CoupleSection() {
               </div>
 
               <div className="space-y-1">
-                <p className="font-amiri text-3xl sm:text-4xl font-bold text-[#3E2A1E]">
-                  شهباس
-                </p>
-                <h3 className="font-playfair text-3xl sm:text-4xl text-[#2C1A0E] font-semibold">
+                <h3 className="font-playfair text-3xl sm:text-4xl text-[#2C1A0E] font-semibold italic">
                   Shahabas
                 </h3>
               </div>
@@ -96,10 +93,7 @@ export default function CoupleSection() {
               </div>
 
               <div className="space-y-1">
-                <p className="font-amiri text-3xl sm:text-4xl font-bold text-[#3E2A1E]">
-                  جمانة
-                </p>
-                <h3 className="font-playfair text-3xl sm:text-4xl text-[#2C1A0E] font-semibold">
+                <h3 className="font-playfair text-3xl sm:text-4xl text-[#2C1A0E] font-semibold italic">
                   Jumana
                 </h3>
               </div>
