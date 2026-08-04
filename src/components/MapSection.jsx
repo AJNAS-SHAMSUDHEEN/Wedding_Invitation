@@ -1,14 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Navigation, Compass } from 'lucide-react';
+import { MapPin, Navigation, Compass, ExternalLink } from 'lucide-react';
 
 export default function MapSection() {
-  const brideMap = "https://maps.app.goo.gl/1KUsQpPJ5yCh8ioY7";
-  const groomMap = "https://maps.app.goo.gl/a6da94FsVA5J4vdF6";
+  const venueAddress = "Laurel Garden, Ussanmotta, Punnol";
+  const venueMapUrl = "https://www.google.com/maps/search/?api=1&query=Laurel+Garden+Ussanmotta+Punnol";
+  const embedMapUrl = `https://maps.google.com/maps?q=${encodeURIComponent(venueAddress)}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
 
   return (
-    <section className="relative py-6 sm:py-8 px-2 sm:px-4 z-10">
-      <div className="max-w-5xl mx-auto">
+    <section id="map-section" className="relative py-6 sm:py-8 px-2 sm:px-4 z-10">
+      <div className="max-w-4xl mx-auto">
         {/* Section Header */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -18,108 +19,71 @@ export default function MapSection() {
           className="text-center mb-6"
         >
           <span className="font-poppins text-xs uppercase tracking-[0.3em] text-[#8A6529] font-semibold flex items-center justify-center gap-1.5">
-            <Compass className="w-4 h-4" /> Location Guidance
+            <Compass className="w-4 h-4 text-[#D4AF37]" /> Interactive Map & Directions
           </span>
           <h2 className="font-playfair text-3xl sm:text-5xl text-[#2C1A0E] font-semibold mt-2">
-            Interactive Venue Maps
+            Location Navigation
           </h2>
           <p className="font-poppins text-xs sm:text-sm text-[#8A6529] mt-2 max-w-md mx-auto">
-            Click on any location below to open directions in Google Maps
+            Laurel Garden, Ussanmotta, Punnol
           </p>
           <div className="w-16 h-[2px] gold-gradient-bg mx-auto mt-3 rounded-full" />
         </motion.div>
 
-        {/* Cards Grid */}
-        <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
-          {/* Card 1: Bride Residence */}
-          <motion.div 
-            whileHover={{ y: -6 }}
-            transition={{ type: "spring", stiffness: 250 }}
-            className="glass-card rounded-3xl p-4 sm:p-6 border border-[#D4AF37]/40 shadow-xl flex flex-col justify-between space-y-4 relative overflow-hidden"
-          >
-            {/* Top Map Banner Pattern */}
-            <div className="h-32 rounded-2xl bg-gradient-to-br from-[#EFE8D8] to-[#F5EEDC] p-4 flex flex-col justify-between relative overflow-hidden border border-[#D4AF37]/30">
-              <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:16px_16px]" />
-              <div className="flex justify-between items-start z-10">
-                <span className="bg-[#D4AF37]/20 text-[#8A6529] font-poppins text-[10px] font-bold uppercase px-3 py-1 rounded-full backdrop-blur-xs">
-                  Nikah Venue
-                </span>
-                <div className="w-10 h-10 rounded-full bg-[#D4AF37] text-white flex items-center justify-center shadow-md">
-                  <MapPin className="w-5 h-5 fill-current text-[#2C1A0E]" />
-                </div>
+        {/* Embedded Google Map Card */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.9 }}
+          className="glass-card rounded-3xl p-3 sm:p-5 border border-[#D4AF37]/40 shadow-2xl space-y-4 relative overflow-hidden"
+        >
+          {/* Header Bar inside card */}
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 px-2 sm:px-4 py-2 border-b border-[#D4AF37]/30">
+            <div className="flex items-center gap-2.5">
+              <div className="w-9 h-9 rounded-full gold-gradient-bg text-[#2C1A0E] flex items-center justify-center shadow-xs">
+                <MapPin className="w-5 h-5 fill-current" />
               </div>
-              <div className="z-10">
-                <span className="font-poppins text-xs text-[#8A6529] font-semibold uppercase tracking-wider block">
-                  Chalode, Kannur
-                </span>
+              <div className="text-center sm:text-left">
+                <h3 className="font-playfair text-xl font-bold text-[#2C1A0E]">
+                  Laurel Garden
+                </h3>
+                <p className="font-poppins text-xs text-[#8A6529]">
+                  Ussanmotta, Punnol, Kerala
+                </p>
               </div>
-            </div>
-
-            <div className="space-y-2">
-              <h3 className="font-playfair text-2xl font-bold text-[#2C1A0E]">
-                Bride Residence
-              </h3>
-              <p className="font-poppins text-xs text-[#5C3A21]">
-                Chalode, Kannur, Kerala
-              </p>
             </div>
 
             <a
-              href={brideMap}
+              href={venueMapUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="ripple w-full py-3.5 rounded-full gold-gradient-bg text-[#2C1A0E] font-poppins font-semibold text-xs uppercase tracking-widest shadow-md hover:brightness-110 transition-transform active:scale-95 flex items-center justify-center gap-2"
+              className="ripple inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full gold-gradient-bg text-[#2C1A0E] font-poppins font-bold text-xs uppercase tracking-wider shadow-md hover:brightness-110 transition-transform active:scale-95 shrink-0"
             >
-              <Navigation className="w-4 h-4 fill-current" />
-              <span>Open Maps</span>
+              <Navigation className="w-3.5 h-3.5 fill-current" />
+              <span>Open in Google Maps</span>
+              <ExternalLink className="w-3 h-3 opacity-70" />
             </a>
-          </motion.div>
+          </div>
 
-          {/* Card 2: Groom Residence */}
-          <motion.div 
-            whileHover={{ y: -6 }}
-            transition={{ type: "spring", stiffness: 250 }}
-            className="glass-card rounded-3xl p-4 sm:p-6 border border-[#D4AF37]/40 shadow-xl flex flex-col justify-between space-y-4 relative overflow-hidden"
-          >
-            {/* Top Map Banner Pattern */}
-            <div className="h-32 rounded-2xl bg-gradient-to-br from-[#EFE8D8] to-[#F5EEDC] p-4 flex flex-col justify-between relative overflow-hidden border border-[#D4AF37]/30">
-              <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:16px_16px]" />
-              <div className="flex justify-between items-start z-10">
-                <span className="bg-[#D4AF37]/20 text-[#8A6529] font-poppins text-[10px] font-bold uppercase px-3 py-1 rounded-full backdrop-blur-xs">
-                  Groom Residence
-                </span>
-                <div className="w-10 h-10 rounded-full bg-[#D4AF37] text-white flex items-center justify-center shadow-md">
-                  <MapPin className="w-5 h-5 fill-current text-[#2C1A0E]" />
-                </div>
-              </div>
-              <div className="z-10">
-                <span className="font-poppins text-xs text-[#8A6529] font-semibold uppercase tracking-wider block">
-                  Koodali, Kannur
-                </span>
-              </div>
-            </div>
-
-            <div className="space-y-2">
-              <h3 className="font-playfair text-2xl font-bold text-[#2C1A0E]">
-                Darul Aman
-              </h3>
-              <p className="font-poppins text-xs text-[#5C3A21]">
-                Koodali, Kannur, Kerala
-              </p>
-            </div>
-
-            <a
-              href={groomMap}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ripple w-full py-3.5 rounded-full gold-gradient-bg text-[#2C1A0E] font-poppins font-semibold text-xs uppercase tracking-widest shadow-md hover:brightness-110 transition-transform active:scale-95 flex items-center justify-center gap-2"
-            >
-              <Navigation className="w-4 h-4 fill-current" />
-              <span>Open Maps</span>
-            </a>
-          </motion.div>
-        </div>
+          {/* Embedded Google Maps iFrame */}
+          <div className="relative w-full h-[350px] sm:h-[420px] rounded-2xl overflow-hidden border border-[#D4AF37]/40 shadow-inner bg-[#F5EEDC]">
+            <iframe
+              title="Google Map Location - Laurel Garden, Ussanmotta, Punnol"
+              src={embedMapUrl}
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-full rounded-2xl filter saturate-[1.05]"
+            />
+          </div>
+        </motion.div>
       </div>
     </section>
   );
 }
+
+

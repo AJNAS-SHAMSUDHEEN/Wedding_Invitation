@@ -8,14 +8,12 @@ export default function WishesSection() {
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
-  // Initial wishes state loaded from localStorage (defaulting to empty array)
+  // Initial wishes state loaded from localStorage
   const [wishes, setWishes] = useState(() => {
-    const saved = localStorage.getItem('wedding_wishes_midlaj_rashmila');
+    const saved = localStorage.getItem('wedding_wishes_shahabas_jumana');
     if (saved) {
       try {
-        const parsed = JSON.parse(saved);
-        // Filter out old test items if any exist
-        return parsed.filter(w => !['Faris & Family', 'Shabeer VK', 'Ayesha NK'].includes(w.name));
+        return JSON.parse(saved);
       } catch (e) {
         console.error(e);
       }
@@ -24,7 +22,7 @@ export default function WishesSection() {
   });
 
   useEffect(() => {
-    localStorage.setItem('wedding_wishes_midlaj_rashmila', JSON.stringify(wishes));
+    localStorage.setItem('wedding_wishes_shahabas_jumana', JSON.stringify(wishes));
   }, [wishes]);
 
   const handleSubmit = (e) => {
@@ -108,7 +106,7 @@ export default function WishesSection() {
                 rows="4"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                placeholder="Write your wishes and prayers for Midlaj & Rashmila..."
+                placeholder="Write your wishes and prayers for Shahabas & Jumana..."
                 className="w-full px-4 py-3 rounded-xl bg-white/90 border border-[#D4AF37]/50 text-[#2C1A0E] font-poppins text-sm focus:outline-none focus:ring-2 focus:ring-[#D4AF37] resize-none"
               />
             </div>
@@ -148,7 +146,7 @@ export default function WishesSection() {
                   Be the first to send your warm prayers!
                 </p>
                 <p className="font-poppins text-xs text-[#8A6529]">
-                  Fill out the form above to share your blessing with Midlaj & Rashmila.
+                  Fill out the form above to share your blessing with Shahabas & Jumana.
                 </p>
               </div>
             ) : (

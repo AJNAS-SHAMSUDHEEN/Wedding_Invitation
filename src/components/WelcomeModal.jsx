@@ -26,25 +26,25 @@ export default function WelcomeModal({ isOpen, onOpen }) {
           <div className="relative z-10 space-y-4">
             {/* Top Bismillah */}
             <p className="font-amiri text-2xl sm:text-3xl text-[#3E2A1E] leading-relaxed drop-shadow-sm font-bold">
-              بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ
+              بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
             </p>
 
             <span className="font-cormorant text-xs tracking-[0.3em] text-[#8A6529] uppercase font-bold block">
-              WEDDING INVITATION
+              NIKAH CEREMONY INVITATION
             </span>
 
             {/* Couple Names */}
             <div className="py-2">
               <h1 className="font-playfair text-3xl sm:text-5xl text-[#2C1A0E] italic font-semibold">
-                Midlaj & Rashmila
+                Shahabas & Jumana
               </h1>
               <p className="font-cormorant text-sm text-[#8A6529] font-bold mt-1">
-                Sunday, 16 August 2026 • Kannur
+                Sunday, 09 August 2026 • Laurel Garden, Punnol
               </p>
             </div>
 
             <p className="font-poppins text-xs text-[#5C3A21] max-w-xs mx-auto leading-relaxed">
-              We cordially invite you to celebrate our sacred union.
+              Together with our families we request the honor of your presence.
             </p>
 
             {/* Glowing Open Invitation Button */}

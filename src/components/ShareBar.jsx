@@ -13,8 +13,8 @@ export default function ShareBar() {
   const [copied, setCopied] = useState(false);
 
   const invitationUrl = window.location.href;
-  const invitationTitle = "Wedding Invitation | Midlaj & Rashmila";
-  const invitationText = "You are cordially invited to the wedding celebration of Midlaj NP & Rashmila Kathim on Sunday, 16 August 2026 at Chalode, Kannur.";
+  const invitationTitle = "Nikah Ceremony Invitation | Shahabas & Jumana";
+  const invitationText = "You are cordially invited to the Nikah Ceremony of Shahabas & Jumana on Sunday, 09 August 2026 at Laurel Garden, Ussanmotta, Punnol.";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(invitationUrl);

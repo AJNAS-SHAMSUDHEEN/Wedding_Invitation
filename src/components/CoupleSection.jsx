@@ -56,19 +56,24 @@ export default function CoupleSection() {
                 GROOM
               </div>
 
-              <h3 className="font-playfair text-3xl sm:text-4xl text-[#2C1A0E] font-semibold">
-                Midlaj NP
-              </h3>
+              <div className="space-y-1">
+                <p className="font-amiri text-3xl sm:text-4xl font-bold text-[#3E2A1E]">
+                  شهباس
+                </p>
+                <h3 className="font-playfair text-3xl sm:text-4xl text-[#2C1A0E] font-semibold">
+                  Shahabas
+                </h3>
+              </div>
 
               <div className="space-y-1 pt-2 border-t border-[#D4AF37]/20">
                 <p className="font-poppins text-xs tracking-wider text-[#8A6529] font-medium">
                   S/o
                 </p>
                 <p className="font-cormorant text-lg sm:text-xl font-bold text-[#3E2A1E]">
-                  Muhammed VK
+                  Shamsudheen KS
                 </p>
                 <p className="font-cormorant text-lg sm:text-xl font-bold text-[#3E2A1E]">
-                  & Jameela NP
+                  & Naseema
                 </p>
               </div>
             </motion.div>
@@ -90,19 +95,24 @@ export default function CoupleSection() {
                 BRIDE
               </div>
 
-              <h3 className="font-playfair text-3xl sm:text-4xl text-[#2C1A0E] font-semibold">
-                Rashmila Kathim
-              </h3>
+              <div className="space-y-1">
+                <p className="font-amiri text-3xl sm:text-4xl font-bold text-[#3E2A1E]">
+                  جمانة
+                </p>
+                <h3 className="font-playfair text-3xl sm:text-4xl text-[#2C1A0E] font-semibold">
+                  Jumana
+                </h3>
+              </div>
 
               <div className="space-y-1 pt-2 border-t border-[#D4AF37]/20">
                 <p className="font-poppins text-xs tracking-wider text-[#8A6529] font-medium">
                   D/o
                 </p>
                 <p className="font-cormorant text-lg sm:text-xl font-bold text-[#3E2A1E]">
-                  Kathim NK
+                  Risaludheen
                 </p>
                 <p className="font-cormorant text-lg sm:text-xl font-bold text-[#3E2A1E]">
-                  & Ramla AK
+                  & Fathimathu Shajiya (Late)
                 </p>
               </div>
             </motion.div>

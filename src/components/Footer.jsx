@@ -13,7 +13,7 @@ export default function Footer() {
       >
         {/* Arabic In Sha Allah */}
         <p className="font-amiri text-3xl sm:text-4xl text-[#3E2A1E] font-bold tracking-wide">
-          إن شاء الله
+          إنْ شَاءَ ٱللَّٰهُ
         </p>
 
         <div className="w-12 h-[1px] gold-gradient-bg mx-auto" />
@@ -24,11 +24,11 @@ export default function Footer() {
         </p>
 
         <p className="font-poppins text-xs text-[#5C3A21] font-medium">
-          See you on our special day.
+          See you at Laurel Garden on our special day.
         </p>
 
         <p className="font-poppins text-[10px] text-[#8A6529]/60 pt-6">
-          Midlaj NP ♡ Rashmila Kathim Wedding • 16 August 2026
+          Shahabas & Jumana Nikah Ceremony • 09 August 2026
         </p>
       </motion.div>
     </footer>

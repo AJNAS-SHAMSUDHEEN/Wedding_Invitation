@@ -41,7 +41,7 @@ export default function GallerySection() {
       id: 6,
       url: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=800&q=80",
       title: "Special Day",
-      subtitle: "Midlaj & Rashmila",
+      subtitle: "Shahabas & Jumana",
     },
   ];
 

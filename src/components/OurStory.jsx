@@ -23,12 +23,12 @@ export default function OurStory() {
 
           {/* Arabic Surah Ar-Rum Verse */}
           <p className="font-amiri text-2xl sm:text-4xl text-[#3E2A1E] leading-relaxed mb-6 font-bold">
-            "وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا"
+            "وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"
           </p>
 
           {/* English Translation */}
           <blockquote className="font-cormorant text-xl sm:text-2xl italic text-[#5C3A21] max-w-2xl mx-auto leading-relaxed">
-            "Indeed, among His signs is that He created for you mates from among yourselves so that you may find tranquility in them."
+            "And among His signs is that He created for you mates from among yourselves that you may find tranquility in them, and He placed between you affection and mercy."
           </blockquote>
 
           <div className="mt-4">
