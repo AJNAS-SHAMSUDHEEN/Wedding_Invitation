@@ -149,14 +149,14 @@ export default function HeroCard() {
           </div>
         </motion.div>
 
-        {/* 6. Groom Name (Shahabas) - Elegant Calligraphy */}
+        {/* 6. Groom Name (Jafakas A K) - Elegant Calligraphy */}
         <motion.div variants={itemFadeUp} className="mt-4 mb-2">
           <motion.h2 
             whileHover={{ scale: 1.03 }}
             transition={{ type: "spring", stiffness: 300 }}
-            className="font-playfair text-5xl sm:text-6xl text-[#2C1A0E] font-normal italic tracking-wider font-serif inline-block cursor-default"
+            className="font-playfair text-4xl sm:text-6xl text-[#2C1A0E] font-normal italic tracking-wider font-serif inline-block cursor-default"
           >
-            Shahabas
+            Jafakas A K
           </motion.h2>
         </motion.div>
 
@@ -182,14 +182,14 @@ export default function HeroCard() {
           </div>
         </motion.div>
 
-        {/* 8. Bride Name (Jumana) - Elegant Calligraphy */}
+        {/* 8. Bride Name (Dr. Najiya) - Elegant Calligraphy */}
         <motion.div variants={itemFadeUp} className="mb-6">
           <motion.h2 
             whileHover={{ scale: 1.03 }}
             transition={{ type: "spring", stiffness: 300 }}
-            className="font-playfair text-5xl sm:text-6xl text-[#2C1A0E] font-normal italic tracking-wider font-serif inline-block cursor-default"
+            className="font-playfair text-4xl sm:text-6xl text-[#2C1A0E] font-normal italic tracking-wider font-serif inline-block cursor-default"
           >
-            Jumana
+            Dr. Najiya
           </motion.h2>
         </motion.div>
 
@@ -206,10 +206,10 @@ export default function HeroCard() {
         {/* Date Display */}
         <motion.div variants={itemFadeUp} className="my-5 space-y-1">
           <p className="font-playfair text-3xl sm:text-4xl font-bold tracking-widest text-[#3E2A1E]">
-            09 / 08 / 2026
+            19 / 09 / 2026
           </p>
           <p className="font-poppins text-xs sm:text-sm tracking-[0.3em] font-semibold text-[#8A6529] uppercase">
-            SUNDAY
+            SATURDAY
           </p>
         </motion.div>
 
@@ -221,7 +221,7 @@ export default function HeroCard() {
         >
           <MapPin className="w-4 h-4 text-[#C59B27] shrink-0 fill-current" />
           <span className="font-poppins text-xs sm:text-sm font-semibold tracking-wide">
-            Laurel Garden, Ussanmotta, Punnol
+            Kozhisseri
           </span>
         </motion.div>
 

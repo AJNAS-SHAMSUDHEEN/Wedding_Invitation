@@ -10,7 +10,7 @@ export default function WishesSection() {
 
   // Initial wishes state loaded from localStorage
   const [wishes, setWishes] = useState(() => {
-    const saved = localStorage.getItem('wedding_wishes_shahabas_jumana');
+    const saved = localStorage.getItem('wedding_wishes_jafakas_najiya');
     if (saved) {
       try {
         return JSON.parse(saved);
@@ -22,7 +22,7 @@ export default function WishesSection() {
   });
 
   useEffect(() => {
-    localStorage.setItem('wedding_wishes_shahabas_jumana', JSON.stringify(wishes));
+    localStorage.setItem('wedding_wishes_jafakas_najiya', JSON.stringify(wishes));
   }, [wishes]);
 
   const handleSubmit = (e) => {
@@ -106,7 +106,7 @@ export default function WishesSection() {
                 rows="4"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                placeholder="Write your wishes and prayers for Shahabas & Jumana..."
+                placeholder="Write your wishes and prayers for Jafakas & Dr. Najiya..."
                 className="w-full px-4 py-3 rounded-xl bg-white/90 border border-[#D4AF37]/50 text-[#2C1A0E] font-poppins text-sm focus:outline-none focus:ring-2 focus:ring-[#D4AF37] resize-none"
               />
             </div>
@@ -146,7 +146,7 @@ export default function WishesSection() {
                   Be the first to send your warm prayers!
                 </p>
                 <p className="font-poppins text-xs text-[#8A6529]">
-                  Fill out the form above to share your blessing with Shahabas & Jumana.
+                  Fill out the form above to share your blessing with Jafakas & Dr. Najiya.
                 </p>
               </div>
             ) : (

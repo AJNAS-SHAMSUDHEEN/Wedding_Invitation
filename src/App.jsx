@@ -17,17 +17,24 @@ export default function App() {
   const [isWelcomeOpen, setIsWelcomeOpen] = useState(true);
   const audioPlayerRef = useRef(null);
 
-  const handleOpenInvitation = () => {
-    setIsWelcomeOpen(false);
+  const handleStartAudio = () => {
     if (audioPlayerRef.current) {
       audioPlayerRef.current.playAudio();
     }
   };
 
+  const handleCloseWelcome = () => {
+    setIsWelcomeOpen(false);
+  };
+
   return (
     <div className="min-h-screen relative overflow-hidden luxury-paper text-[#3E2A1E]">
       {/* Welcome Screen / Cover Overlay for 100% Instant Audio Playback */}
-      <WelcomeModal isOpen={isWelcomeOpen} onOpen={handleOpenInvitation} />
+      <WelcomeModal 
+        isOpen={isWelcomeOpen} 
+        onStartAudio={handleStartAudio}
+        onClose={handleCloseWelcome} 
+      />
 
       {/* Background Animated Palm Shadow & Floating Particle Canvas */}
       <BackgroundParticles />

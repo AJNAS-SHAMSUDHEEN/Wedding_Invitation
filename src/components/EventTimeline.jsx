@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { MapPin, Calendar, Clock, Navigation, ExternalLink } from 'lucide-react';
 
 export default function EventTimeline() {
-  const venueMapUrl = "https://www.google.com/maps/search/?api=1&query=Laurel+Garden+Ussanmotta+Punnol";
+  const venueMapUrl = "https://www.google.com/maps/search/?api=1&query=Kozhisseri";
 
   return (
     <section id="events-section" className="relative py-6 sm:py-8 px-2 sm:px-4 z-10">
@@ -44,7 +44,7 @@ export default function EventTimeline() {
           <div className="flex flex-wrap items-center justify-center gap-4 text-[#3E2A1E] font-poppins text-sm pt-2 border-t border-[#D4AF37]/20">
             <div className="flex items-center gap-2">
               <Calendar className="w-4 h-4 text-[#C59B27]" />
-              <span className="font-medium">Sunday, 09 August 2026</span>
+              <span className="font-medium">Saturday, 19 September 2026</span>
             </div>
             <div className="hidden sm:block text-[#D4AF37]">●</div>
             <div className="flex items-center gap-2">
@@ -56,7 +56,7 @@ export default function EventTimeline() {
           <div className="p-4 rounded-2xl bg-[#F5EEDC]/60 border border-[#D4AF37]/30 space-y-2">
             <div className="flex items-center justify-center gap-2 text-[#2C1A0E] font-semibold font-poppins text-base sm:text-lg">
               <MapPin className="w-5 h-5 text-[#C59B27] shrink-0 fill-current" />
-              <span>Laurel Garden, Ussanmotta, Punnol</span>
+              <span>Kozhisseri</span>
             </div>
             <p className="font-poppins text-xs text-[#8A6529]">
               Join us for the ceremony and blessings

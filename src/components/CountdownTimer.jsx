@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Sparkles } from 'lucide-react';
 
 export default function CountdownTimer() {
-  const targetDate = new Date('2026-08-09T10:30:00+05:30').getTime();
+  const targetDate = new Date('2026-09-19T10:30:00+05:30').getTime();
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -66,7 +66,7 @@ export default function CountdownTimer() {
               Save The Date
             </h2>
             <p className="font-cormorant text-base sm:text-lg text-[#8A6529] font-bold">
-              Sunday, 09 August 2026 • Laurel Garden
+              Saturday, 19 September 2026 • Kozhisseri
             </p>
           </div>
 

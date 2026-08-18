@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import { MapPin, Navigation, Compass, ExternalLink } from 'lucide-react';
 
 export default function MapSection() {
-  const venueAddress = "Laurel Garden, Ussanmotta, Punnol";
-  const venueMapUrl = "https://www.google.com/maps/search/?api=1&query=Laurel+Garden+Ussanmotta+Punnol";
-  const embedMapUrl = `https://maps.google.com/maps?q=${encodeURIComponent(venueAddress)}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+  const venueAddress = "Kozhisseri, Kerala";
+  const venueMapUrl = "https://www.google.com/maps/search/?api=1&query=Kozhisseri";
+  const embedMapUrl = `https://maps.google.com/maps?q=${encodeURIComponent(venueAddress)}&t=&z=14&ie=UTF8&iwloc=&output=embed`;
 
   return (
     <section id="map-section" className="relative py-6 sm:py-8 px-2 sm:px-4 z-10">
@@ -25,7 +25,7 @@ export default function MapSection() {
             Location Navigation
           </h2>
           <p className="font-poppins text-xs sm:text-sm text-[#8A6529] mt-2 max-w-md mx-auto">
-            Laurel Garden, Ussanmotta, Punnol
+            Kozhisseri, Kerala
           </p>
           <div className="w-16 h-[2px] gold-gradient-bg mx-auto mt-3 rounded-full" />
         </motion.div>
@@ -46,10 +46,10 @@ export default function MapSection() {
               </div>
               <div className="text-center sm:text-left">
                 <h3 className="font-playfair text-xl font-bold text-[#2C1A0E]">
-                  Laurel Garden
+                  Kozhisseri
                 </h3>
                 <p className="font-poppins text-xs text-[#8A6529]">
-                  Ussanmotta, Punnol, Kerala
+                  Kozhisseri, Kerala
                 </p>
               </div>
             </div>
@@ -69,7 +69,7 @@ export default function MapSection() {
           {/* Embedded Google Maps iFrame */}
           <div className="relative w-full h-[350px] sm:h-[420px] rounded-2xl overflow-hidden border border-[#D4AF37]/40 shadow-inner bg-[#F5EEDC]">
             <iframe
-              title="Google Map Location - Laurel Garden, Ussanmotta, Punnol"
+              title="Google Map Location - Kozhisseri, Kerala"
               src={embedMapUrl}
               width="100%"
               height="100%"

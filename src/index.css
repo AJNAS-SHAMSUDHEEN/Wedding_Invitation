@@ -125,3 +125,15 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #A37E1C;
 }
+
+/* 3D Envelope Styles */
+.perspective-1200 {
+  perspective: 1200px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}

@@ -24,11 +24,11 @@ export default function Footer() {
         </p>
 
         <p className="font-poppins text-xs text-[#5C3A21] font-medium">
-          See you at Laurel Garden on our special day.
+          See you at Kozhisseri on our special day.
         </p>
 
         <p className="font-poppins text-[10px] text-[#8A6529]/60 pt-6">
-          Shahabas & Jumana Nikah Ceremony • 09 August 2026
+          Jafakas A K & Dr. Najiya Nikah Ceremony • 19 September 2026
         </p>
       </motion.div>
     </footer>

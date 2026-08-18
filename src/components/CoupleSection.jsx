@@ -58,19 +58,19 @@ export default function CoupleSection() {
 
               <div className="space-y-1">
                 <h3 className="font-playfair text-3xl sm:text-4xl text-[#2C1A0E] font-semibold italic">
-                  Shahabas
+                  Jafakas A K
                 </h3>
               </div>
 
               <div className="space-y-1 pt-2 border-t border-[#D4AF37]/20">
                 <p className="font-poppins text-xs tracking-wider text-[#8A6529] font-medium">
-                  S/o
+                  With the blessings of
                 </p>
                 <p className="font-cormorant text-lg sm:text-xl font-bold text-[#3E2A1E]">
-                  Shamsudheen KS
+                  Parents & Family
                 </p>
-                <p className="font-cormorant text-lg sm:text-xl font-bold text-[#3E2A1E]">
-                  & Naseema
+                <p className="font-poppins text-xs text-[#8A6529]">
+                  Kozhisseri
                 </p>
               </div>
             </motion.div>
@@ -94,19 +94,19 @@ export default function CoupleSection() {
 
               <div className="space-y-1">
                 <h3 className="font-playfair text-3xl sm:text-4xl text-[#2C1A0E] font-semibold italic">
-                  Jumana
+                  Dr. Najiya
                 </h3>
               </div>
 
               <div className="space-y-1 pt-2 border-t border-[#D4AF37]/20">
                 <p className="font-poppins text-xs tracking-wider text-[#8A6529] font-medium">
-                  D/o
+                  With the blessings of
                 </p>
                 <p className="font-cormorant text-lg sm:text-xl font-bold text-[#3E2A1E]">
-                  Risaludheen
+                  Parents & Family
                 </p>
-                <p className="font-cormorant text-lg sm:text-xl font-bold text-[#3E2A1E]">
-                  & Fathimathu Shajiya (Late)
+                <p className="font-poppins text-xs text-[#8A6529]">
+                  Kozhisseri
                 </p>
               </div>
             </motion.div>
