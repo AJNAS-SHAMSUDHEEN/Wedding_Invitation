@@ -27,9 +27,24 @@ export default function Footer() {
           See you at Kozhisseri on our special day.
         </p>
 
-        <p className="font-poppins text-[10px] text-[#8A6529]/60 pt-6">
+        <p className="font-poppins text-[10px] text-[#8A6529]/60 pt-4">
           Jafakas A K & Dr. Najiya Nikah Ceremony • 19 September 2026
         </p>
+
+        {/* Designed by AJ Creations (WhatsApp Redirect) */}
+        <div className="pt-2 flex items-center justify-center gap-1.5">
+          <span className="font-poppins text-[10px] sm:text-xs text-[#8A6529]/70 font-medium">
+            Designed by
+          </span>
+          <a
+            href="https://wa.me/918921202909?text=Hi%20AJ%20Creations%2C%20I%20am%20interested%20in%20creating%20a%20digital%20wedding%20invitation."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 font-poppins text-[10px] sm:text-xs font-bold text-[#8A6529] hover:text-[#2C1A0E] transition-all transform hover:scale-105 active:scale-95 underline underline-offset-4 decoration-[#D4AF37]/60 hover:decoration-[#D4AF37]"
+          >
+            <span>AJ Creations</span>
+          </a>
+        </div>
       </motion.div>
     </footer>
   );
